@@ -66,9 +66,14 @@ h2{font-weight:200;font-size:clamp(26px,3.6vw,38px);line-height:1.15;margin:16px
 .inside .n{font-family:'Space Mono',monospace;font-size:10px;color:var(--gray);padding-top:4px}
 
 .founder{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;border:1px solid var(--hair);padding:40px;max-width:760px}
-@media(max-width:700px){.founder{grid-template-columns:1fr;gap:24px}}
 .founder img{width:150px;height:150px;object-fit:cover;filter:grayscale(1);border:1px solid var(--hair)}
 .founder p{color:#BDBDBD;font-size:14.5px;margin-top:8px}
+@media(max-width:700px){
+  .founder{grid-template-columns:1fr;gap:22px;padding:26px}
+  .founder img{width:100%;height:auto;max-height:380px;object-position:top}
+  .founder p{font-size:16px;line-height:1.7}
+  .founder .sig{font-size:10px}
+}
 .founder .sig{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:0.22em;color:var(--gray);text-transform:uppercase;margin-top:14px}
 
 .faq{max-width:640px;margin-top:30px}
@@ -84,6 +89,18 @@ details p{padding:0 0 20px;color:#9A9A9A;font-size:14px;max-width:560px}
 footer{border-top:1px solid var(--hair);padding:36px 0}
 footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:0.2em;color:#5A5A5A;text-transform:uppercase}
 footer a:hover{color:var(--white)}
+@media(max-width:700px){
+  h1{font-size:clamp(38px,9.5vw,48px)}
+  .hero p.sub{font-size:17.5px}
+  .form input{font-size:16px;padding:18px}
+  .form button{font-size:12px;padding:19px}
+  .trust{font-size:9.5px}
+  .inside li{font-size:16.5px;gap:14px}
+  h2{font-size:clamp(30px,7.5vw,38px)}
+  summary{font-size:16.5px}
+  details p{font-size:15px}
+  .label{font-size:11px}
+}
 </style>
 </head>
 <body>
@@ -134,7 +151,7 @@ footer a:hover{color:var(--white)}
       <img src="https://static.wixstatic.com/media/21cb00_9a1f2e39d53847acb910e7cf4a47de69~mv2.jpg" alt="Lukas Plassnig">
       <div>
         <div class="label">Wer das schreibt</div>
-        <p>Ich bin Lukas. Ich arbeite selbst im Schichtdienst, 60 Stunden in manchen Wochen, und trainiere trotzdem auf schwere Kraftwerte und Marathon-Distanzen. Über 100 Menschen habe ich 1:1 gecoacht, vom Manager bis zum Botschafter. Dieses Programm ist das System, das ich selbst brauche: eines, das hält, wenn der Kalender es nicht tut.</p>
+        <p>Ich bin Lukas. Ich arbeite selbst im Schichtdienst, 60 Stunden in manchen Wochen, und trainiere trotzdem auf schwere Kraftwerte und Marathon-Distanzen. Über 100 Menschen habe ich 1:1 gecoacht, vom Piloten über Manager bis zum Profi-Sportler. Dieses Programm ist das System, das ich selbst brauche: eines, das hält, wenn der Kalender es nicht tut.</p>
         <div class="sig">Lukas Plassnig · Founder &amp; Coach, VOLTR</div>
       </div>
     </div>
