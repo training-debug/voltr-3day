@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 3-Day Week | Kostenloses 4-Wochen-Programm | VOLTR.</title>
+<meta name="description" content="4 Wochen strukturiertes Training für Wochen, die sich nicht an Pläne halten. 3 Sessions pro Woche, RPE-basiert, kostenlos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0A0A0A;--white:#FAFAFA;--gray:#8A8A8A;--hair:#232323}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Outfit',sans-serif;font-weight:300;background:var(--black);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:'Space Mono',monospace}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+.label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gray)}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+header{padding:26px 0;border-bottom:1px solid var(--hair)}
+.wordmark{font-weight:300;font-size:18px;letter-spacing:0.4em}
+
+.hero{display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;align-items:center;padding:90px 0 70px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding:60px 0 40px}}
+h1{font-weight:200;font-size:clamp(34px,5.4vw,58px);line-height:1.08;letter-spacing:-0.015em;margin:22px 0 18px}
+.hero p.sub{color:#BDBDBD;font-size:16.5px;max-width:460px}
+
+.form{margin-top:34px;max-width:440px}
+.form input{width:100%;background:transparent;border:1px solid #3A3A3A;color:var(--white);font-family:'Outfit',sans-serif;font-weight:300;font-size:15px;padding:16px 18px;outline:none;transition:border-color .2s}
+.form input:focus{border-color:var(--white)}
+.form button{width:100%;margin-top:12px;background:var(--white);color:var(--black);border:1px solid var(--white);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;padding:17px;cursor:pointer;transition:all .25s}
+.form button:hover{background:transparent;color:var(--white)}
+.trust{font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:0.16em;color:#5A5A5A;text-transform:uppercase;margin-top:14px;line-height:2}
+
+.coverwrap{position:relative;display:flex;justify-content:center}
+.coverwrap img{width:100%;max-width:340px;border:1px solid var(--hair);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+
+.ticker{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:14px 0;overflow:hidden}
+.ticker .track{display:flex;white-space:nowrap;width:max-content;animation:scroll 30s linear infinite}
+.ticker span{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:0.28em;color:#5A5A5A;text-transform:uppercase;padding:0 30px;border-right:1px solid var(--hair)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}}
+
+section{padding:90px 0}
+h2{font-weight:200;font-size:clamp(26px,3.6vw,38px);line-height:1.15;margin:16px 0 10px}
+
+.inside{list-style:none;margin-top:30px;max-width:640px}
+.inside li{display:flex;gap:18px;padding:16px 0;border-top:1px solid var(--hair);font-size:15.5px;color:#D8D8D8}
+.inside li:last-child{border-bottom:1px solid var(--hair)}
+.inside .n{font-family:'Space Mono',monospace;font-size:10px;color:var(--gray);padding-top:4px}
+
+.founder{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;border:1px solid var(--hair);padding:40px;max-width:760px}
+@media(max-width:700px){.founder{grid-template-columns:1fr;gap:24px}}
+.founder img{width:150px;height:150px;object-fit:cover;filter:grayscale(1);border:1px solid var(--hair)}
+.founder p{color:#BDBDBD;font-size:14.5px;margin-top:8px}
+.founder .sig{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:0.22em;color:var(--gray);text-transform:uppercase;margin-top:14px}
+
+.faq{max-width:640px;margin-top:30px}
+details{border-top:1px solid var(--hair)}
+details:last-child{border-bottom:1px solid var(--hair)}
+summary{cursor:pointer;padding:18px 0;font-weight:300;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';font-weight:200;font-size:20px;color:var(--gray)}
+details[open] summary:after{content:'\2212'}
+details p{padding:0 0 20px;color:#9A9A9A;font-size:14px;max-width:560px}
+
+.final{text-align:center;padding:100px 0}
+footer{border-top:1px solid var(--hair);padding:36px 0}
+footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:0.2em;color:#5A5A5A;text-transform:uppercase}
+footer a:hover{color:var(--white)}
+</style>
+</head>
+<body>
+
+<header><div class="wrap"><span class="wordmark">VOLTR.</span></div></header>
+
+<div class="wrap hero">
+  <div>
+    <div class="label">Kostenloses 4-Wochen-Programm</div>
+    <h1>Training für Wochen, die sich nicht an Pläne halten.</h1>
+    <p class="sub">Frühdienst, Überstunden, Reisen, Familie. The 3-Day Week ist ein strukturiertes 4-Wochen-Programm mit 3 Sessions pro Woche, das genau dafür gebaut ist. RPE-basiert, Gym-fokussiert, mit eingebauter Regel für Wochen, die crashen.</p>
+
+    <!-- KIT FORM: Action-URL und Feldnamen nach Kit-Setup ersetzen -->
+    <form class="form" action="https://app.kit.com/forms/9647717/subscriptions" method="post">
+      <input type="email" name="email_address" placeholder="Deine E-Mail-Adresse" required>
+      <button type="submit">Programm kostenlos holen</button>
+      <div class="trust">Kein Spam. Keine Verkaufsshow. Abmeldung jederzeit.<br>Danach: der Performance Letter, 1x pro Woche.</div>
+    </form>
+  </div>
+  <div class="coverwrap reveal d1">
+    <img src="cover.png" alt="The 3-Day Week, Programm-Cover">
+  </div>
+</div>
+
+<div class="ticker">
+  <div class="track">
+    <span>4 Wochen</span><span>3 Sessions / Woche</span><span>Ø 60 Minuten</span><span>RPE-basiert</span><span>Deload eingebaut</span><span>Alternativen für jede Übung</span>
+    <span>4 Wochen</span><span>3 Sessions / Woche</span><span>Ø 60 Minuten</span><span>RPE-basiert</span><span>Deload eingebaut</span><span>Alternativen für jede Übung</span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="label reveal">Was drin ist</div>
+    <h2 class="reveal d1">Kein E-Book. Ein Programm.</h2>
+    <ul class="inside reveal d2">
+      <li><span class="n">01</span>Drei komplette Sessions: Lower, Upper, Full Body + Conditioning. Jede Übung mit Sätzen, RPE-Zielen, Pausen und einer Alternative, falls das Equipment fehlt.</li>
+      <li><span class="n">02</span>RPE-System erklärt in zwei Minuten: Das Gewicht passt sich deiner Tagesform an, nicht umgekehrt.</li>
+      <li><span class="n">03</span>Progression über 4 Wochen inklusive Deload. Du weißt jede Woche, was zu tun ist.</li>
+      <li><span class="n">04</span>Die Crash-Regel: Was du machst, wenn die Woche nur 2 Sessions hergibt. Oder eine. Oder keine.</li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="founder reveal">
+      <img src="https://static.wixstatic.com/media/21cb00_9a1f2e39d53847acb910e7cf4a47de69~mv2.jpg" alt="Lukas Plassnig">
+      <div>
+        <div class="label">Wer das schreibt</div>
+        <p>Ich bin Lukas. Ich arbeite selbst im Schichtdienst, 60 Stunden in manchen Wochen, und trainiere trotzdem auf schwere Kraftwerte und Marathon-Distanzen. Über 100 Menschen habe ich 1:1 gecoacht, vom Manager bis zum Botschafter. Dieses Programm ist das System, das ich selbst brauche: eines, das hält, wenn der Kalender es nicht tut.</p>
+        <div class="sig">Lukas Plassnig · Founder &amp; Coach, VOLTR</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="label reveal">Fragen</div>
+    <div class="faq reveal d1">
+      <details>
+        <summary>Was kostet das wirklich?</summary>
+        <p>Nichts. Du bekommst das Programm und danach einmal pro Woche den Performance Letter. Wenn er dir nichts gibt, ein Klick, abgemeldet.</p>
+      </details>
+      <details>
+        <summary>Für wen ist das nichts?</summary>
+        <p>Wenn du noch nie im Gym warst, starte mit ein paar Wochen betreuter Technik. Und wenn du eine 4-Wochen-Transformation suchst, sind wir die Falschen.</p>
+      </details>
+      <details>
+        <summary>Brauche ich ein Gym?</summary>
+        <p>Ja, ein normal ausgestattetes: Langhantel, Kurzhanteln, Kabelzug oder Bänder. Für fast jede Übung steht eine Alternative im Programm.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="final">
+  <div class="wrap">
+    <div class="label reveal">Bereit?</div>
+    <h2 class="reveal d1">Die nächste volle Woche kommt sicher.</h2>
+    <form class="form reveal d2" style="margin:30px auto 0" action="https://app.kit.com/forms/9647717/subscriptions" method="post">
+      <input type="email" name="email_address" placeholder="Deine E-Mail-Adresse" required>
+      <button type="submit">Programm kostenlos holen</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap inner">
+    <span>VOLTR. &middot; VIENNA</span>
+    <span><a href="https://voltr.at">voltr.at</a> &middot; <a href="https://voltr.at/datenschutz.html">Datenschutz</a> &middot; <a href="https://voltr.at/impressum.html">Impressum</a></span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold: 0.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
